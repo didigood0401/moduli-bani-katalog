@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Модульные бани - каталог линейки</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3EEE6;--paper:#FBF8F3;--ink:#231C16;--mut:#7A6E62;--wood:#B9824C;--char:#2E2620;--line:#E2D8CA;--ember:#D9622B}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 Manrope,system-ui,sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.u{font-family:Unbounded,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.08}
+h2{font-size:clamp(26px,4vw,40px)}
+.kick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--wood);font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border:0;cursor:pointer;font-family:inherit;font-size:15px;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ember{background:var(--ember)}
+section{padding:70px 0}
+nav.top{position:sticky;top:0;z-index:10;background:rgba(243,238,230,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:700 16px Unbounded;display:flex;gap:10px;align-items:center}
+.logo i{width:28px;height:28px;border-radius:7px;background:var(--ink);display:grid;place-items:center}
+.pages{display:flex;gap:6px;overflow-x:auto}
+.pages a{font-size:13px;padding:7px 12px;border-radius:999px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.pages a:hover{background:var(--paper)}
+/* hero */
+.hero{padding:40px 0 30px}
+.hgrid{display:grid;gap:28px}
+.hero h1{font-size:clamp(34px,6.4vw,72px)}
+.hero h1 span{color:var(--wood)}
+.lead{font-size:18px;color:var(--mut);margin:18px 0 26px;max-width:520px}
+.utp{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:30px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.utp div{background:var(--paper);padding:14px}
+.utp b{font:700 20px Unbounded;display:block}
+.utp span{font-size:12.5px;color:var(--mut)}
+.scene{position:relative;background:radial-gradient(120% 90% at 70% 20%,#3a2c20,#17110c);border-radius:22px;aspect-ratio:5/4;overflow:hidden}
+.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.scene .cap{position:absolute;left:18px;bottom:16px;color:#f3e6d6;font-size:13px;opacity:.85}
+.typesel{position:absolute;right:14px;top:14px;display:flex;gap:6px}
+.typesel button{border:0;border-radius:999px;padding:8px 13px;font:700 13px Manrope;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.typesel button.on{background:#fff;color:var(--ink)}
+/* catalog */
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:24px 0}
+.seg{display:flex;background:var(--paper);border-radius:999px;padding:4px;border:1px solid var(--line)}
+.seg button{border:0;background:none;padding:8px 14px;border-radius:999px;font:600 14px Manrope;cursor:pointer;color:var(--mut)}
+.seg button.on{background:var(--ink);color:#fff}
+.cards{display:grid;gap:16px}
+.card{background:var(--paper);border-radius:20px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -20px rgba(35,28,22,.35)}
+.card .im{aspect-ratio:16/10;background:linear-gradient(180deg,#e9dccb,#d9c4a8);position:relative}
+.card .im svg{position:absolute;inset:0;width:100%;height:100%}
+.card .tp{position:absolute;left:14px;top:14px;font:700 12px Unbounded;background:var(--ink);color:#fff;padding:6px 10px;border-radius:8px}
+.card .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:20px}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px;color:var(--mut)}
+.specs b{display:block;color:var(--ink);font-size:15px}
+.from{font:700 22px Unbounded;margin-top:auto}
+.from small{font:500 13px Manrope;color:var(--mut)}
+.card .acts{display:flex;gap:8px}
+.card .acts .btn{flex:1;justify-content:center;min-height:44px;padding:0 12px;font-size:14px}
+/* product */
+.prod{background:var(--paper)}
+.pgrid{display:grid;gap:30px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+.plan svg{width:100%;height:auto}
+.plan text{font:600 11px Manrope;fill:var(--mut)}
+.plan .room{fill:#f6efe4;stroke:var(--ink);stroke-width:2}
+.plan .lbl{font:700 12px Unbounded;fill:var(--ink)}
+.tabs{display:flex;gap:6px;margin:14px 0}
+.tabs button{flex:1;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 6px;font:700 13px Manrope;cursor:pointer;transition:.2s}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.kit{display:grid;gap:8px;font-size:14.5px}
+.kit div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.kit span{color:var(--mut)}
+.opts{display:grid;gap:8px;margin-top:18px}
+.opt{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;user-select:none;transition:.2s}
+.opt.on{border-color:var(--ember);box-shadow:inset 0 0 0 1px var(--ember)}
+.opt i{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--mut);flex:none;transition:.2s}
+.opt.on i{background:var(--ember);border-color:var(--ember)}
+.opt b{margin-left:auto;font-size:14px;white-space:nowrap}
+.total{margin-top:18px;background:var(--ink);color:#fff;border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.total .sum{font:700 30px Unbounded}
+.total small{display:block;color:#bfae9b;font-size:13px}
+/* compare */
+.cmp{overflow-x:auto;margin-top:22px;border-radius:16px;border:1px solid var(--line);background:var(--paper)}
+.cmp table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+.cmp th,.cmp td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{font:700 13px Unbounded}
+.cmp td:first-child{color:var(--mut)}
+/* brand */
+.brand{background:var(--char);color:#f3e6d6}
+.bgrid{display:grid;gap:14px;margin-top:26px}
+.sw{border-radius:16px;padding:18px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;font-size:13px}
+.sw b{font:700 15px Unbounded}
+.typo{background:#3a3029;border-radius:16px;padding:20px}
+.typo .a{font:700 42px Unbounded;color:#fff}
+.slides{display:flex;gap:12px;overflow-x:auto;margin-top:16px;padding-bottom:6px;scroll-snap-type:x mandatory}
+.slide{flex:0 0 260px;aspect-ratio:16/9;border-radius:12px;background:#f3e6d6;color:var(--ink);padding:14px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between;font-size:12px}
+.slide b{font:700 15px Unbounded;line-height:1.15}
+.slide.d{background:#17110c;color:#f3e6d6}
+.slide.w2{background:var(--wood);color:#fff}
+/* lead */
+.lead2{display:grid;gap:18px;background:var(--paper);border-radius:24px;padding:26px;border:1px solid var(--line)}
+.lead2 input{height:52px;border-radius:12px;border:1px solid var(--line);padding:0 14px;font:16px Manrope;width:100%;background:#fff}
+.note{font-size:12.5px;color:var(--mut);text-align:center;padding:24px 20px 40px}
+@media(min-width:800px){
+  .hgrid{grid-template-columns:1fr 1.05fr;align-items:center}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .pgrid{grid-template-columns:1.1fr 1fr}
+  .bgrid{grid-template-columns:repeat(4,1fr)}
+  .typo{grid-column:span 2}
+  .lead2{grid-template-columns:1.2fr 1fr 1fr auto;align-items:center}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav class="top"><div class="w">
+  <div class="logo"><i><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.6"><path d="M2 8L8 3l6 5v6H2z"/><path d="M6 14v-3h4v3"/></svg></i>ПАР·МОДУЛЬ</div>
+  <div class="pages"><a href="#katalog">Каталог</a><a href="#kartochka">Карточка</a><a href="#sravnenie">Сравнение</a><a href="#brend">Бренд-бук</a></div>
+</div></nav>
+
+<header class="hero"><div class="w hgrid">
+  <div>
+    <div class="kick">Линейка модульных бань · ширина 2,5 м</div>
+    <h1>Баня, которая приезжает <span>готовой</span></h1>
+    <p class="lead">Три размера, три комплектации. Производство за 21 день, доставка и установка за 1 день. Гарантия 5 лет.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn ember" href="#kartochka">Рассчитать стоимость</a><a class="btn ghost" href="#katalog">Смотреть каталог</a></div>
+    <div class="utp"><div><b>21 день</b><span>производство</span></div><div><b>5 лет</b><span>гарантия</span></div><div><b>1 день</b><span>доставка и монтаж</span></div></div>
+  </div>
+  <div class="scene">
+    <div class="typesel" id="hsel"><button data-l="4" class="on">A · 4 м</button><button data-l="5">B · 5 м</button><button data-l="6">C · 6 м</button></div>
+    <svg viewBox="0 0 500 400" id="hsvg"></svg>
+    <div class="cap" id="hcap">Тип A · 2,5 × 4 м · для 2-3 человек</div>
+  </div>
+</div></header>
+
+<section id="katalog"><div class="w">
+  <div class="kick">Страница каталога</div>
+  <h2>Три типа - одна ширина</h2>
+  <div class="bar">
+    <div class="seg" id="kitSeg"><button class="on" data-k="0">Эконом</button><button data-k="1">Стандарт</button><button data-k="2">Премиум</button></div>
+    <div class="seg" id="sortSeg"><button class="on" data-s="area">По площади</button><button data-s="price">По цене</button></div>
+  </div>
+  <div class="cards" id="cards"></div>
+</div></section>
+
+<section class="prod" id="kartochka"><div class="w">
+  <div class="kick">Карточка товара + калькулятор</div>
+  <h2 id="pTitle">Тип B · 2,5 × 5 м</h2>
+  <div class="tabs" id="pType"><button data-t="0">A · 4 м</button><button class="on" data-t="1">B · 5 м</button><button data-t="2">C · 6 м</button></div>
+  <div class="pgrid">
+    <div>
+      <div class="plan"><svg viewBox="0 0 640 300" id="plan"></svg></div>
+      <div class="tabs" id="pKit"><button data-k="0">Эконом</button><button class="on" data-k="1">Стандарт</button><button data-k="2">Премиум</button></div>
+      <div class="kit" id="kit"></div>
+    </div>
+    <div>
+      <div class="kick" style="margin-bottom:10px">Опции</div>
+      <div class="opts" id="opts"></div>
+      <div class="total"><div><small>Итого с доставкой по области</small><div class="sum" id="sum">-</div></div><a class="btn ember" href="#zayavka">Оставить заявку</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="sravnenie"><div class="w">
+  <div class="kick">Сравнение моделей</div>
+  <h2>Что выбрать</h2>
+  <div class="cmp"><table id="cmp"></table></div>
+</div></section>
+
+<section class="brand" id="brend"><div class="w">
+  <div class="kick">Бренд-бук и презентация</div>
+  <h2 style="color:#fff">Тёплое дерево, уголь и огонь</h2>
+  <div class="bgrid">
+    <div class="sw" style="background:#F3EEE6;color:#231C16"><b>Липа</b>#F3EEE6 · фон</div>
+    <div class="sw" style="background:#B9824C;color:#fff"><b>Термососна</b>#B9824C · акцент</div>
+    <div class="sw" style="background:#231C16;color:#fff;box-shadow:inset 0 0 0 1px #4a3d33"><b>Уголь</b>#231C16 · текст</div>
+    <div class="sw" style="background:#D9622B;color:#fff"><b>Жар</b>#D9622B · кнопки</div>
+    <div class="typo"><div class="a">Unbounded</div><div style="margin-top:8px">Заголовки - плотные и тёплые, читаются на баннерах и в соцсетях</div></div>
+    <div class="typo"><div style="font:700 30px Manrope;color:#fff">Manrope</div><div style="margin-top:8px">Текст каталога, характеристики, цены</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide d"><span>01</span><b>ПАР·МОДУЛЬ<br>Линейка 2026</b></div>
+    <div class="slide"><span>02 · Тип A</span><b>Компактная<br>2,5 × 4 м</b></div>
+    <div class="slide"><span>03 · Тип B</span><b>Оптимальная<br>2,5 × 5 м</b></div>
+    <div class="slide w2"><span>04 · Тип C</span><b>Просторная<br>с террасой</b></div>
+    <div class="slide d"><span>05</span><b>Как мы строим:<br>21 день</b></div>
+    <div class="slide"><span>06</span><b>Комплектации<br>и цены</b></div>
+  </div>
+</div></section>
+
+<section id="zayavka"><div class="w">
+  <div class="lead2">
+    <div><div class="u" style="font-size:22px">Подберём баню под участок</div><div style="color:var(--mut);font-size:14px;margin-top:6px" id="leadSel">Тип B · Стандарт</div></div>
+    <input placeholder="Имя"><input placeholder="+7 (___) ___-__-__" inputmode="tel">
+    <button class="btn ember" onclick="this.textContent='Заявка отправлена ✓'">Отправить</button>
+  </div>
+</div></section>
+<div class="note">Демо-концепция: название, цены и комплектации условные. Сделаю по вашим данным и фото: каталог, бренд-бук и презентацию в одном стиле.</div>
+
+<script>
+const T=[{n:'A',l:4,ppl:'2-3',name:'Компактная',base:[390000,465000,560000]},{n:'B',l:5,ppl:'3-5',name:'Оптимальная',base:[465000,545000,655000]},{n:'C',l:6,ppl:'5-8',name:'Просторная',base:[540000,630000,760000]}];
+const K=[{n:'Эконом',ins:'100 мм',wall:'Вагонка сосна, класс AB',fl:'Доска 40 мм',stove:'Дровяная 12 кВт'},{n:'Стандарт',ins:'150 мм',wall:'Липа экстра, абаш на полках',fl:'Плитка в мойке, доска в парной',stove:'Дровяная с выносной топкой'},{n:'Премиум',ins:'200 мм',wall:'Термоосина, кедр в парной',fl:'Керамогранит, тёплый пол',stove:'Печь с закрытой каменкой, панорамное окно'}];
+const O=[{n:'Бак для воды 60 л',p:14000},{n:'Терраса 2,5 × 1,5 м',p:68000},{n:'Санузел с душем',p:95000},{n:'Купель / чан у террасы',p:120000},{n:'Подсветка полков',p:12000}];
+const rub=v=>v.toLocaleString('ru-RU')+' ₽';
+let kit=0,sort='area',pt=1,pk=1,on=new Set([0]);
+
+// hero drawing
+function hero(l){const W=60*l,x0=250-W/2,s=document.getElementById('hsvg');
+  s.innerHTML=`<defs><linearGradient id="wd" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c88f55"/><stop offset="1" stop-color="#8e5d33"/></linearGradient><radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb26b" stop-opacity=".9"/><stop offset="1" stop-color="#ffb26b" stop-opacity="0"/></radialGradient></defs>
+  <ellipse cx="250" cy="318" rx="${W/2+70}" ry="16" fill="#000" opacity=".45"/>
+  <g style="transition:all .5s">
+  <path d="M${x0-12} 150 L${x0+W+12} 150 L${x0+W+2} 132 L${x0-2} 132Z" fill="#2a211b"/>
+  <rect x="${x0}" y="150" width="${W}" height="160" rx="6" fill="url(#wd)"/>
+  ${Array.from({length:14},(_,i)=>`<line x1="${x0}" x2="${x0+W}" y1="${161+i*11}" y2="${161+i*11}" stroke="#7a4e2b" stroke-opacity=".35"/>`).join('')}
+  <rect x="${x0+18}" y="185" width="48" height="110" rx="4" fill="#2a1d14"/>
+  <circle cx="${x0+57}" cy="242" r="3" fill="#d9a46b"/>
+  <rect x="${x0+W-110}" y="190" width="80" height="50" rx="4" fill="#ffcf8f"/><rect x="${x0+W-110}" y="190" width="80" height="50" rx="4" fill="url(#gl)"/>
+  <circle cx="${x0+W-70}" cy="215" r="70" fill="url(#gl)" opacity=".5"/>
+  ${l>=5?`<rect x="${x0+W/2-20}" y="200" width="30" height="30" rx="3" fill="#ffcf8f" opacity=".85"/>`:''}
+  ${l>=6?`<rect x="${x0-70}" y="282" width="70" height="10" fill="#8e5d33"/><line x1="${x0-66}" x2="${x0-66}" y1="292" y2="312" stroke="#5c3b20" stroke-width="5"/>`:''}
+  <rect x="${x0+W-40}" y="102" width="14" height="34" fill="#3b2f27"/>
+  </g>
+  <g fill="#fff" opacity=".18">${Array.from({length:5},(_,i)=>`<circle cx="${x0+W-33+Math.sin(i)*6}" cy="${92-i*16}" r="${6+i*3}"><animate attributeName="cy" values="${92-i*16};${70-i*16}" dur="${3+i*.4}s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="${3+i*.4}s" repeatCount="indefinite"/></circle>`).join('')}</g>
+  <text x="250" y="350" fill="#c9b49c" font-family="Manrope" font-size="13" text-anchor="middle">← ${l} м →</text>`;
+  const t=T[l-4];document.getElementById('hcap').textContent=`Тип ${t.n} · 2,5 × ${l} м · для ${t.ppl} человек`;
+}
+document.querySelectorAll('#hsel button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#hsel button').forEach(x=>x.classList.toggle('on',x===b));hero(+b.dataset.l)});
+hero(4);
+
+function mini(l){const W=40*l,x0=150-W/2;return `<svg viewBox="0 0 300 190"><ellipse cx="150" cy="160" rx="${W/2+30}" ry="8" fill="#000" opacity=".12"/><path d="M${x0-8} 70 L${x0+W+8} 70 L${x0+W} 58 L${x0} 58Z" fill="#2E2620"/><rect x="${x0}" y="70" width="${W}" height="88" rx="4" fill="#b9824c"/><rect x="${x0+10}" y="92" width="26" height="62" rx="2" fill="#2E2620"/><rect x="${x0+W-56}" y="92" width="44" height="28" rx="2" fill="#ffd9a3"/></svg>`}
+function cards(){const arr=T.map((t,i)=>({...t,i,price:t.base[kit],area:(2.5*t.l).toFixed(1).replace('.',',')}));arr.sort((a,b)=>sort==='price'?a.price-b.price:a.area-b.area);
+  document.getElementById('cards').innerHTML=arr.map(t=>`<article class="card"><div class="im">${mini(t.l)}<span class="tp">Тип ${t.n}</span></div><div class="bd"><h3>${t.name} · 2,5 × ${t.l} м</h3><div class="specs"><div><b>${t.area} м²</b>площадь</div><div><b>${t.ppl}</b>человек</div><div><b>${K[kit].ins}</b>утеплитель</div></div><div class="from"><small>${K[kit].n} от</small><br>${rub(t.price)}</div><div class="acts"><a class="btn ghost" href="#kartochka" data-t="${t.i}">Подробнее</a><a class="btn" href="#zayavka" data-t="${t.i}">Заявка</a></div></div></article>`).join('');
+  document.querySelectorAll('#cards [data-t]').forEach(a=>a.addEventListener('click',()=>{pt=+a.dataset.t;pk=kit;prod()}))}
+document.querySelectorAll('#kitSeg button').forEach(b=>b.onclick=()=>{kit=+b.dataset.k;document.querySelectorAll('#kitSeg button').forEach(x=>x.classList.toggle('on',x===b));cards()});
+document.querySelectorAll('#sortSeg button').forEach(b=>b.onclick=()=>{sort=b.dataset.s;document.querySelectorAll('#sortSeg button').forEach(x=>x.classList.toggle('on',x===b));cards()});
+
+function plan(l){const S=600/6,w=l*S,x=20+(600-w)/2,h=2.5*S,y=40;
+  const steam=l===4?1.8:l===5?2:2.2,wash=l===4?1:1.2,rest=l-steam-wash;
+  const r=(a,b,n)=>`<rect class="room" x="${x+a*S}" y="${y}" width="${b*S}" height="${h}"/><text class="lbl" x="${x+(a+b/2)*S}" y="${y+h/2}" text-anchor="middle">${n}</text><text x="${x+(a+b/2)*S}" y="${y+h/2+18}" text-anchor="middle">${String(b.toFixed(1)).replace('.',',')} м</text>`;
+  return `${r(0,rest,'Отдых')}${r(rest,wash,'Мойка')}${r(rest+wash,steam,'Парная')}
+  <line x1="${x}" x2="${x+w}" y1="${y+h+26}" y2="${y+h+26}" stroke="#7A6E62"/><text x="${x+w/2}" y="${y+h+44}" text-anchor="middle">${l} м</text>
+  <line x1="${x-10}" x2="${x-10}" y1="${y}" y2="${y+h}" stroke="#7A6E62"/><text x="${x-16}" y="${y+h/2}" text-anchor="end">2,5 м</text>
+  <rect x="${x+(rest+wash+steam)*S-34}" y="${y+h-40}" width="26" height="30" fill="#D9622B" opacity=".85" rx="3"/>
+  <rect x="${x-6}" y="${y+h-70}" width="10" height="50" fill="#F3EEE6" stroke="#231C16" stroke-width="2"/>`}
+function prod(){const t=T[pt],k=K[pk];document.getElementById('pTitle').textContent=`Тип ${t.n} · 2,5 × ${t.l} м · ${t.name}`;
+  document.querySelectorAll('#pType button').forEach(b=>b.classList.toggle('on',+b.dataset.t===pt));
+  document.querySelectorAll('#pKit button').forEach(b=>b.classList.toggle('on',+b.dataset.k===pk));
+  document.getElementById('plan').innerHTML=plan(t.l);
+  document.getElementById('kit').innerHTML=[['Габариты',`2,5 × ${t.l} × 2,7 м`],['Площадь',(2.5*t.l).toFixed(1).replace('.',',')+' м²'],['Вместимость',t.ppl+' человек'],['Утеплитель',k.ins],['Отделка',k.wall],['Пол',k.fl],['Печь',k.stove]].map(([a,b])=>`<div><span>${a}</span><b>${b}</b></div>`).join('');
+  document.getElementById('opts').innerHTML=O.map((o,i)=>`<div class="opt ${on.has(i)?'on':''}" data-i="${i}"><i></i>${o.n}<b>+ ${rub(o.p)}</b></div>`).join('');
+  document.querySelectorAll('.opt').forEach(el=>el.onclick=()=>{const i=+el.dataset.i;on.has(i)?on.delete(i):on.add(i);prod()});
+  const s=t.base[pk]+[...on].reduce((a,i)=>a+O[i].p,0);document.getElementById('sum').textContent=rub(s);
+  document.getElementById('leadSel').textContent=`Тип ${t.n} · ${k.n} · ${rub(s)}`}
+document.querySelectorAll('#pType button').forEach(b=>b.onclick=()=>{pt=+b.dataset.t;prod()});
+document.querySelectorAll('#pKit button').forEach(b=>b.onclick=()=>{pk=+b.dataset.k;prod()});
+
+document.getElementById('cmp').innerHTML=`<tr><th></th>${T.map(t=>`<th>Тип ${t.n}</th>`).join('')}</tr>`+
+ [['Размер',t=>`2,5 × ${t.l} м`],['Площадь',t=>(2.5*t.l).toFixed(1).replace('.',',')+' м²'],['Человек',t=>t.ppl],['Терраса',t=>t.l===6?'входит в Премиум':'опция'],['Эконом от',t=>rub(t.base[0])],['Стандарт от',t=>rub(t.base[1])],['Премиум от',t=>rub(t.base[2])],['Для кого',t=>t.l===4?'дача, пара':t.l===5?'семья, друзья':'гостевой дом, база']]
+ .map(([n,f])=>`<tr><td>${n}</td>${T.map(t=>`<td>${f(t)}</td>`).join('')}</tr>`).join('');
+cards();prod();
+</script>
+</body>
+</html>
